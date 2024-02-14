@@ -12,12 +12,6 @@ export class AppComponent {
   fullName: string = '';
   @ViewChildren('inputEl') inputElements: QueryList<ElementRef>;
 
-  ngOnInit() {
-    this.inputElements.forEach((el) => {
-      console.log(el.nativeElement.value);
-    });
-  }
-
   show() {
     let name = '';
     this.inputElements.forEach((el) => {
